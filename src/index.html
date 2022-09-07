@@ -8,6 +8,63 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <h1>Hello world</h1>
-  </body>
+    @@include("./partials/anchor/_anchor.html", {"text": "One"})
+    @@include("./partials/anchor/_anchor.html", {"text": "Two"})
+    @@include("./partials/anchor/_anchor.html", {"text": "Three"})
+    <div >
+      <a  href="#smth">
+        Scroll to
+        <span>
+          anchor
+        </span>
+       </a>
+    </div>
+    <div>
+      <a href="https://google.com">link to Google the same tab</a>
+    </div>
+    <div>
+      <a href="https://yahoo.com" target="_blank">link to Yahoo the new tab</a>
+    </div>
+    <div>
+      <a href="http://wikipedia.com" target="smth">link to Wikipedia the new tab once</a>
+    </div>
+    <div>
+      <a href="mailto:smb@test.com">Open mail <span style="color: red">agent</span></a>      
+    </div>
+    <div>
+      <a href="skype:skype">Open Skype</a>
+    </div>
+    <div>
+      <a href="tel:+37529151545">Try to call</a>
+    </div>
+    <input type="submit">
+    <input type="text"  placeholder="Search" value="Text">
+    <input type="number" value="150" name="number" min="10">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="password">
+    <input type="date">
+    <input type="time">
+    <select>
+      <option>One</option>
+      <option>Two</option>
+      <option>Three</option>
+    </select>
+    <img src="./img/cats/cat.jpg"/>
+    <img src="./img/mice/mouse.jpg"/>
+    <img
+     alt="Cute kitty"
+     src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&w=1000&q=80"
+     >
+     <figure>
+      <img       src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&w=1000&q=80"
+      >
+      <figcaption>dsfsdf</details>
+     </figure>
+     <div style="height: 150vh;"></div>
+    <div id="smth">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis sapiente officia consequuntur aspernatur! Voluptatem dolore optio rerum omnis, nostrum ad aliquid repudiandae dolores veniam facilis porro distinctio expedita ipsum.
+    </div>
+    <div style="height: 150vh;"></div>
+
 </html>

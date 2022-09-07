@@ -1,5 +1,8 @@
+@import "./partials/anchor/anchor.scss";
+
 body * {
   outline: 1px solid lightgrey;
+  scroll-behavior: smooth;
 }
 
 

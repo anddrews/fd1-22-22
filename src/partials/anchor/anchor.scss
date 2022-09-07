@@ -1,0 +1,9 @@
+.anchor {
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+
+    &:visited {
+        color: green;
+    }
+}
