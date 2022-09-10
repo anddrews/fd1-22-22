@@ -1,5 +1,66 @@
 body * {
-  outline: 1px solid lightgrey;
+  outline: 1px solid lightgray;
+}
+
+* {
+  background-color: lightgrey;
+}
+
+div {
+  background-color: blue;
+}
+
+[class="div"] {
+  background-color: red;
+}
+
+.div.div1 {
+  background-color: yellow;
+}
+
+.div {
+  background-color: green;
+}
+
+#div {
+  background-color: tomato;
+}
+
+.wrapper .item {
+  margin: 10px;
+  background-color: rgb(137, 192, 48);
+}
+
+.main-bg {
+  background-color: rgb(38, 196, 64);
+}
+
+.p-15 {
+  padding: 15px;
+  border: 2px double black;
+}
+.p-40 {
+  padding: 40px;
+}
+
+// .item + .item{
+//   background-color: rgb(219, 88, 143);
+// }
+
+// .tilda ~ .item {
+//   background-color: tomato;
+// }
+
+.wrapper .item:nth-child(2n + 1) {
+  background-color: blue;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-t-50 {
+  margin-top: 50px;
 }
 
 
