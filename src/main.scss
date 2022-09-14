@@ -2,4 +2,91 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+.column {
+  background-color: lightblue;
+  min-width: 33.3%;
+  width: 33.3%;
+}
+
+.columns-inline {
+  font-size: 0;
+}
+
+.columns-inline .column {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.columns-flex {
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  // justify-content: space-around;
+  height: 200px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.columns-flex .column {
+  height: 40%;
+  min-width: auto;
+  width: calc((100% - 40px) / 3);
+  // flex: 1 0 auto;
+  // margin: 10px 10px;
+}
+
+.columns-float .column:first-child {
+  float: left;
+}
+
+.columns-float .column:last-child {
+  float: right;
+}
+.columns-float .column:nth-child(2) {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.columns-float:hover:before {
+  content: attr(data-prop);
+  display: block;
+  background-color: tomato;
+  height: 30px;
+}
+
+.columns-float:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.image {
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+
+.stub {
+  height: 30vh;
+}
+
+.center {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.center span {
+  font-size: 50px;
+  vertical-align: middle;
+}
+
 
