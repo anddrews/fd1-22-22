@@ -2,4 +2,73 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+.simple-block {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+}
 
+.relative {
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+}
+
+.main-btn {
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+.main-btn:hover {
+  position: relative;
+  bottom: 1px;
+  left: 1px;
+}
+
+.absolute-wrapper {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-gray {
+  background-color: lightgray;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 20px;
+}
+
+.sticky-wrapper {
+  height: 100vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 25px;
+}
+
+.stub {
+  height: 100vh;
+  width: 200px;
+}
+
+.overflow-hidden {
+  display: inline;
+  width: 200px;
+  // height: 150px;
+  background-color: rgb(106, 160, 179);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
