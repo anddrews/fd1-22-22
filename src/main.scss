@@ -3,3 +3,61 @@ body * {
 }
 
 
+.main-content {
+  margin: 25px 25px 0;
+}
+
+.header {
+  width: 50%;
+  height: 40px;
+  background-color: lightgrey;
+  margin: 0 auto;
+}
+
+.banners {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  background-color: green;
+  height: 80px;
+  width: 50%;
+  margin: 0 26px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  // height: 80px;
+  width: 33.3%;
+  // width: 100%;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.footer {
+  height: 55px;
+  background-color: tomato;
+  margin-top: 25px;
+}
+
+
+
+
