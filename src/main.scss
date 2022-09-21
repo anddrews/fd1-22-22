@@ -43,6 +43,14 @@ body * {
   background-color: lightgray;
 }
 
+.absolute.bg-green {
+  z-index: 2;
+}
+
+.absolute.bg-gray {
+  z-index: 1;
+}
+
 .fixed {
   position: fixed;
   top: 0;
@@ -67,8 +75,8 @@ body * {
   display: inline;
   width: 200px;
   // height: 150px;
-  background-color: rgb(106, 160, 179);
+  background-color: rgba(168, 120, 35, 0.8);
   overflow: hidden;
   text-overflow: ellipsis;
-  
+
 }
