@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,82 +8,35 @@
     <title>First project</title>
     <script src="./js/main.js" defer></script>
   </head>
+
   <body>
-    <div>
-      <h3>Relative</h3>
-      <div class="simple-block tooltip" data-text="Smth"></div>
-      <div class="simple-block bg-green relative"></div>
-      <div class="simple-block"></div>
-      <button class="main-btn">Submit</button>
-    </div>
-    <div class="absolute-wrapper">
-      <h3>Absolute</h3>
-      <div class="simple-block"></div>
-      <div>
-        <div class="simple-block bg-green absolute">Absolute</div>
-        <div class="simple-block bg-gray absolute">Absolute</div>
+    <header>
+      <div class="container header">
+        @@include("./partials/logo/_logo.html", {"firstLine": "orange", "secondLine": "rabbit"})
+        <nav class="main-menu">
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "home"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "about"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "work"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "blog"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "contact"})
+        </nav>
       </div>
-      <div class="simple-block"></div>
-    </div>
-    <div >
-      <h3>Fixed</h3>
-        <div class="simple-block bg-gray fixed">Fixed</div>
-    </div>
-    <div class="sticky-wrapper">
-      <h3>Sticky</h3>
-        <div class="simple-block bg-gray sticky">Sticky</div>
-    </div>
-    <div>
-      <p>Tooltip</p>
-      <button class="tooltip" data-text="Click me to submit data!">Submit</button>
-    </div>
-    <div class="menu">
-      <div class="menu-item">
-        <img src="http://fff" />
-        <div class="sub-menu">
-          <div class="menu-item">
-            <img src="http://fff" />
-            <div class="sub-menu">
-              dsdfds
-            </div>
-          </div>
+    </header>
+    <main>
+      <div class="slider">
+        <div class="container">
+          Slider
         </div>
       </div>
-      <div class="menu-item">
-        <img src="http://fff" />
-        <div class="sub-menu">
-          <div class="menu-item">
-            <img src="http://fff" />
-            <div class="sub-menu">
-              dsdfds
-            </div>
-          </div>
-        </div>
+      <div class="container">
+        @@include("./partials/logo/_logo.html", {"firstLine": "Smth", "secondLine": "next"})
       </div>
-      <div class="menu-item">
-        First
-        <div class="sub-menu">
-          <div class="menu-item">
-            <img src="http://fff" />
-            <div class="sub-menu">
-              dsdfds
-            </div>
-          </div>
-        </div>
+    </main>
+    <footer>
+      <div class="container">
+        footer
       </div>
-    </div>
-    <div class="stub">
-      <p class="overflow-hidden">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem hic sit assumenda eaque tempora quis maiores accusantium, eligendi ullam architecto in, earum maxime reprehenderit autem illum recusandae cumque temporibus?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem hic sit assumenda eaque tempora quis maiores accusantium, eligendi ullam architecto in, earum maxime reprehenderit autem illum recusandae cumque temporibus?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem hic sit assumenda eaque tempora quis maiores accusantium, eligendi ullam architecto in, earum maxime reprehenderit autem illum recusandae cumque temporibus?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem hic sit assumenda eaque tempora quis maiores accusantium, eligendi ullam architecto in, earum maxime reprehenderit autem illum recusandae cumque temporibus?
-      </p>
-    </div>
-
- 
-
-
+    </footer>
   </body>
 
 </html>

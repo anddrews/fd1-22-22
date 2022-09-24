@@ -1,135 +1,31 @@
+@import "./sprites.scss";
+@import "./partials/logo/logo.scss";
+@import "./partials/menu-item/menu-item.scss";
+
 body * {
-  outline: 1px solid lightgrey;
+  // outline: 1px solid lightgrey;
 }
 
-.simple-block {
-  width: 200px;
-  height: 200px;
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.main-menu {
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row-reverse;
+}
+
+.slider,
+.footer {
   background-color: tomato;
-}
-
-.relative {
-  position: relative;
-  bottom: 50px;
-  left: 50px;
-}
-
-.main-btn {
-  padding: 15px 40px;
-  font-size: 18px;
-}
-
-.main-btn:hover {
-  position: relative;
-  bottom: 1px;
-  left: 1px;
-}
-
-.absolute-wrapper {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-  top: 50px;
-  left: 200px;
-}
-
-.bg-green {
-  background-color: green;
-}
-
-.bg-gray {
-  background-color: lightgray;
-}
-
-.absolute.bg-green {
-  z-index: 2;
-}
-
-.absolute.bg-gray {
-  z-index: 1;
-}
-
-.fixed {
-  position: fixed;
-  top: 0;
-  height: 20px;
-}
-
-.sticky-wrapper {
-  height: 100vh;
-}
-
-.sticky {
-  position: sticky;
-  top: 25px;
-}
-
-.stub {
-  height: 100vh;
-  width: 200px;
-}
-
-.overflow-hidden {
-  display: inline;
-  width: 200px;
-  // height: 150px;
-  background-color: rgba(168, 120, 35, 0.8);
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-}
-
-.tooltip {
-  position: relative;
-}
-
-.tooltip:hover::before {
-  content: attr(data-text);
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  padding: 5px 10px;
-  border: 1px solid black;
-  border-radius: 3px;
-  background-color: #fff;
-  white-space: nowrap;
-  transform: translateY(-100%);
-}
-
-.tooltip:hover::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: calc(50% + 5px);
-  transform: translateY(-100%);
-  width: 8px;
-  height: 8px;
-  clip-path: polygon(50% 100%, 0 0, 100% 0);
-  background-color: rgb(175, 173, 173);
-  border: 1px solid black;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-}
-.menu-item {
-  position: relative;
-  display: flex;
-  width: fit-content;
-}
-
-.menu-item:hover > .sub-menu {
-  display: block;
-}
-
-.sub-menu {
-  position: absolute;
-  top: 90%;
-  left: 90%;
-  display: none;
-  background-color: red;
 }
