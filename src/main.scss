@@ -80,3 +80,56 @@ body * {
   text-overflow: ellipsis;
 
 }
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #fff;
+  white-space: nowrap;
+  transform: translateY(-100%);
+}
+
+.tooltip:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: calc(50% + 5px);
+  transform: translateY(-100%);
+  width: 8px;
+  height: 8px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: rgb(175, 173, 173);
+  border: 1px solid black;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu-item {
+  position: relative;
+  display: flex;
+  width: fit-content;
+}
+
+.menu-item:hover > .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  display: none;
+  background-color: red;
+}
