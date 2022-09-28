@@ -1,42 +1,61 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.scss">
-    <title>First project</title>
-    <script src="./js/main.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.scss">
+  <title>First project</title>
+  <script src="./js/main.js" defer></script>
+</head>
 
-  <body>
-    <header>
-      <div class="container header">
-        @@include("./partials/logo/_logo.html", {"firstLine": "orange", "secondLine": "rabbit"})
-        <nav class="main-menu">
-          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "home"})
-          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "about"})
-          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "work"})
-          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "blog"})
-          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "contact"})
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="slider">
-        <div class="container">
-          Slider
+<body>
+  <header>
+    <div class="container header">
+      @@include("./partials/logo/_logo.html", {"firstLine": "orange", "secondLine": "rabbit"})
+      <nav class="main-menu">
+        @@include("./partials/menu-item/_menu-item.html", {"menuItem": "home"})
+        @@include("./partials/menu-item/_menu-item.html", {"menuItem": "about"})
+        @@include("./partials/menu-item/_menu-item.html", {"menuItem": "work"})
+        @@include("./partials/menu-item/_menu-item.html", {"menuItem": "blog"})
+        @@include("./partials/menu-item/_menu-item.html", {"menuItem": "contact"})
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="slider">
+      <div class="container slider-content">
+        <div class="slider-text">
+          <p class="first-line">
+            do you like rabbit?
+          </p>
+          <p class="second-line">
+            do you like oranges?
+          </p>
         </div>
       </div>
-      <div class="container">
-        @@include("./partials/logo/_logo.html", {"firstLine": "Smth", "secondLine": "next"})
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        footer
-      </div>
-    </footer>
-  </body>
+    </div>
+    <div class="container">
+      @@include("./partials/logo/_logo.html", {"firstLine": "Smth", "secondLine": "next"})
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-content">
+      COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT,
+    </div>
+  </footer>
+  <div class="square-wrapper">
+    <div class="square-column">
+      <div class="square"></div>
+    </div>
+    <div class="square-column">
+      <div class="square"></div>
+    </div>
+    <div class="square-column">
+      <div class="square"></div>
+    </div>
+
+  </div>
+</body>
 
 </html>

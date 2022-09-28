@@ -1,3 +1,4 @@
+@import "./variables.scss";
 @import "./sprites.scss";
 @import "./partials/logo/logo.scss";
 @import "./partials/menu-item/menu-item.scss";
@@ -25,7 +26,87 @@ body * {
   flex-direction: row-reverse;
 }
 
-.slider,
-.footer {
-  background-color: tomato;
+.slider {
+  background-color: $main-color;
 }
+
+.footer {
+  background-color: $main-color;
+}
+
+.footer-content {
+  padding: 20px 0 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.slider {
+  background-image: url("../img/big-orange-bg.png");
+  background-size: cover;
+  height: 400px;
+  border-top: $card-circle-background;
+  border-bottom: $card-circle-background;
+}
+
+.slider-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+}
+
+.slider-text {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 28px;
+}
+
+.slider-text p {
+  margin: 0;
+}
+
+.square-wrapper {
+  display: flex;
+  column-gap: 100px;
+}
+
+.square-column {
+  flex: 1 0 auto;
+}
+
+.square {
+  padding: 50% 0;
+  background-image: url('./img/big-orange-bg.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border: $card-circle-background;
+  }
+}
+
+
+.square-wrapper {
+  img {
+    max-width: 100%;
+    max-height: 100%;;
+  }
+
+  > p {
+    margin: 0;
+  }
+}
+
