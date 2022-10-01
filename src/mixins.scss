@@ -1,0 +1,13 @@
+@mixin special-block($fz: 18px) {
+    border: none;
+    padding: 5px 10px;
+    font-size: $fz;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover {
+        position: relative;
+        bottom: 1px;
+        left: 1px;
+    }
+}

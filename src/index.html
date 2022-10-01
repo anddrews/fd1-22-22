@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <link href="./fonts/PassionsConflict-Regular.ttf" />
   <link rel="stylesheet" href="./main.scss">
   <title>First project</title>
+  <script src="https://kit.fontawesome.com/3880b28705.js" crossorigin="anonymous"></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -37,6 +40,11 @@
     </div>
     <div class="container">
       @@include("./partials/logo/_logo.html", {"firstLine": "Smth", "secondLine": "next"})
+      @@include("./partials/card/_card.html")
+      <span style="font-size: 3em; color: Tomato;">
+        <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
     </div>
   </main>
   <footer class="footer">
@@ -44,18 +52,6 @@
       COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT,
     </div>
   </footer>
-  <div class="square-wrapper">
-    <div class="square-column">
-      <div class="square"></div>
-    </div>
-    <div class="square-column">
-      <div class="square"></div>
-    </div>
-    <div class="square-column">
-      <div class="square"></div>
-    </div>
-
-  </div>
 </body>
 
 </html>

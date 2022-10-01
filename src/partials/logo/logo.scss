@@ -1,3 +1,4 @@
+@import "../../mixins.scss";
 .logo {
     display: flex;
     column-gap: 40px;
@@ -12,10 +13,13 @@
 }
 
 .first-line {
+    font-family: 'Custom';
     color: orange;
+    font-style: italic;
 }
 
 .second-line {
+    font-family: 'Bungee Spice', 'Courier New';
     color: gray;
     text-transform: uppercase;
     font-size: 25px;

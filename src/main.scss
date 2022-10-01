@@ -2,6 +2,13 @@
 @import "./sprites.scss";
 @import "./partials/logo/logo.scss";
 @import "./partials/menu-item/menu-item.scss";
+@import "./partials/card/card.scss";
+
+@font-face {
+  font-family: "Custom";
+  src: url("../fonts/PassionsConflict-Regular.ttf");
+  font-weight: 400;
+}
 
 body * {
   // outline: 1px solid lightgrey;
