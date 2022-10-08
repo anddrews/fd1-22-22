@@ -8,10 +8,28 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
+
+
+    <div class="accordion">
+      <input id="toggler-open" type="radio" class="accordion__input--open" name="toggler" >
+      <input id="toggler-close" type="radio" class="accordion__input--close" name="toggler" checked="true">
+      <p class="accordion__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, provident fuga quaerat autem deserunt quo commodi exercitationem architecto, quis atque soluta. Doloremque alias iure culpa, numquam provident aut fugit dicta.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, provident fuga quaerat autem deserunt quo commodi exercitationem architecto, quis atque soluta. Doloremque alias iure culpa, numquam provident aut fugit dicta.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, provident fuga quaerat autem deserunt quo commodi exercitationem architecto, quis atque soluta. Doloremque alias iure culpa, numquam provident aut fugit dicta.
+      </p>
+      <label for="toggler-open" class="accordion__toggler accordion__toggler--open">Read more...</label>
+      <label for="toggler-close" class="accordion__toggler accordion__toggler--close">Read less...</label>
+    </div>
+
+
+
+
     <form name="simple-form" action="https://jsonplaceholder.typicode.com/todos/1" method="post">
       <label for="external-input">
         Click me
       </label>
+      <input id="external-input" type="checkbox">
       <label class="label">
         Text
         <input type="text" name="firstName" maxlength="5" value="11223">
@@ -59,9 +77,49 @@
         <option value="2">two</option>
         <option value="3">three</option>
       </select>
-      <button>Submit</button>
-      
+      <label>
+        Textarea
+        <textarea rows="5" cols="5"></textarea>
+      </label>
+      <button>Submit button</button>
     </form>
-    <input id="external-input" type="checkbox">
+    <form action="get" class="rabbit-form">
+      <label for="name" class="rabbit-form__input">
+        Namesdfsdfsdfsd:
+      </label>
+      <input id="name" type="text">
+      <label for="email" class="rabbit-form__input">
+        Email:
+      </label>
+      <input id="email" type="text">
+      <label for="message" class="rabbit-form__input">
+        Message:
+      </label>
+      <textarea id="message"></textarea>
+    </form>
+    <form action="get" class="rabbit-form-flex">
+      <label for="name" class="rabbit-form-flex__input">
+        Namezsdfsdfsdfsd:
+        <input id="name" type="text">
+      </label>
+      <label for="email" class="rabbit-form-flex__input">
+        Email:
+        <input id="email" type="text">
+      </label>
+      <label for="message" class="rabbit-form-flex__input">
+        Message:
+        <textarea id="message"></textarea>
+      </label>
+    </form>
+
+    <div class="custom-radio">
+      <input type="radio" id="custom-radio" class="custom-radio__input" name="custom-radio">
+      <label for="custom-radio" class="custom-radio__label">custom radio</label>
+    </div>
+    <div class="custom-radio">
+      <input type="radio" id="custom-radio-1" class="custom-radio__input" name="custom-radio">
+      <label for="custom-radio-1" class="custom-radio__label">custom radio</label>
+    </div>
+
   </body>
 </html>
