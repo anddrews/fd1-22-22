@@ -107,15 +107,19 @@ input:checked ~ label {
 
     &:before {
       content: "";
-      width: 50px;
-      height: 50px;
-      border: 2px solid #34af21;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
-      margin-right: 15px;
+      margin: 4px 15px 4px 4px;
+      box-shadow: 0 0 0 3px #34af21;
+      box-sizing: border-box;
+      border-width: 22px;
+      transition: all ease .5s;
     }
 
     &:after {
       content: "";
+      display: none;
       width: 50px;
       height: 50px;
       background-color: #34af21;
@@ -130,9 +134,14 @@ input:checked ~ label {
     }
   }
 
-  &__input:checked + &__label:after {
-    transform: translateY(-50%) scale(1);
-    transition: scale ease .5s;
+  &__input:checked + &__label:before {
+    background-color: #34af21;
+    border: 7px solid #fff;
+  
   }
+}
+
+.accordions {
+  display: flex;
 }
 
