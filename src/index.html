@@ -9,46 +9,25 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatum nam distinctio modi facilis excepturi, error animi asperiores iste repellendus, consequuntur earum aliquam unde est ipsam, exercitationem harum quo explicabo!
-    </p>
-    <label for="modal-open" class="modal__open">
-      Open modal
-    </label>
-    <div class="modal">
-      <input id="modal-open" type="radio" name="modal" class="modal__input open">
-      <input id="modal-close" type="radio" name="modal" class="modal__input close" checked>
-      <div class="modal__overlay">
-        <div class="modal__window">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam consequuntur eos adipisci magni consectetur nemo facilis voluptate nihil, molestiae voluptatibus ratione libero minus officia ab tenetur sequi ducimus nobis. Officia?
-          <label for="modal-close" class="modal__close">
-            X
-          </label>
-        </div>
-      </div>
-    </div>
+    @@include('./partials/heading/_heading.html', {"type": "primary", "text": "Last News"})
+    @@include('./partials/heading/_heading.html', {"type": "secondary", "text": "Main News"})
+    @@include('./partials/text-with-icon/_text-with-icon.html', {
+      "text": "Some text",
+      "icons": "camera"
+    })
+    @@include('./partials/text-with-icon/_text-with-icon.html', {
+      "text": "Some text",
+      "icons": "video"
+    })
+    @@include('./partials/text-with-icon/_text-with-icon.html', {
+      "text": "Some text",
+      "icons": "camera video"
+    })
+    @@include('./partials/list-link/_list-link.html', {
+      "text": "Some link",
+      "icons": "camera video",
+      "link": "#"
+    })
+    <!-- <i class="fa fa-brands fa-youtube"></i> -->
   </body>
 </html>

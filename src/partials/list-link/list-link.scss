@@ -1,0 +1,12 @@
+@import "../../colors";
+
+.list-link {
+    text-decoration: none;
+    color: $main-color;
+
+    &:hover {
+        color: $highlight;
+        text-decoration: underline;
+        cursor: url("/img/cursor.png") 10 10, auto;
+    }
+}
