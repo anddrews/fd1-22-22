@@ -3,3 +3,59 @@ body * {
 }
 
 
+.modal {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+  }
+
+
+  &__window {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    min-height: 250px;
+    max-height: 40vh;
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+  }
+
+  &__close {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    background-color: #fff;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    box-shadow: 0 0 2px 2px rgb(153, 146, 146);
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input.close:checked ~ &__overlay {
+    display: none;
+  }
+}
+
+label {
+  cursor: pointer;
+}
+
+.no-scroll {
+  max-height: 100vh;
+  overflow: hidden;
+}
