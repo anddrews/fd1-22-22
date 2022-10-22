@@ -3,12 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pagination.js.org/css/base.css">
+    <link rel="stylesheet" href="https://pagination.js.org/css/prettify.css">
+    <link rel="stylesheet" href="https://pagination.js.org/css/style.css">
     <link rel="stylesheet" href="./main.scss">
     <title>First project</title>
     <script src="https://kit.fontawesome.com/6400fdeca0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./js/pagination.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <div id="data-container"></div>
+    <div id="demo"></div>
+    <h1>H1</h1>
+    <p>P</p>
+    <span>Span</span>
     @@include('./partials/heading/_heading.html', {"type": "primary", "text": "Last News"})
     @@include('./partials/heading/_heading.html', {"type": "secondary", "text": "Main News"})
     @@include('./partials/text-with-icon/_text-with-icon.html', {
