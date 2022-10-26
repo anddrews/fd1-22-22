@@ -2,7 +2,7 @@
 @import "../../mixins";
 
 .text-with-icon {
-    display: flex;
+    display: inline-block;
     align-items: center;
     column-gap: 5px;
     font-size: 14px;
@@ -11,19 +11,32 @@
         font-size: 30px;
     }
 
-    &.camera:after {
+
+    .camera-icon:before {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         content: "\f030";
         color: $main-color;
+        font-style: normal;
+        display: none;
     }
 
-    &.video:before {
+    .video-icon:before {
         font-family: "Font Awesome 5 Brands";
         font-weight: 900;
         content: "\f167";
         order: 3;
         color: $main-color;
+        font-style: normal;
+        display: none;
+    }
+
+    &.video .video-icon:before {
+        display: inline;
+    }
+
+    &.camera .camera-icon:before {
+        display: inline;
     }
 }
 
