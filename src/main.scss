@@ -1,5 +1,47 @@
+
+@import "./slick/slick.scss";
+@import "./slick/slick-theme.scss";
+
+@font-face {
+  font-family: 'slick';
+  src: url("../fonts/slick.ttf");
+}
 body * {
   outline: 1px solid lightgrey;
 }
 
+body {
+  // background-color: rgb(167, 161, 161);
 
+}
+
+
+.slick-slider {
+  width: 50vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: 30px;
+}
+
+.slick-next {
+  right: 50px;
+}
+
+.slick-prev {
+  right: 150px;
+  z-index: 1;
+}
+
+
+.splide__slide:before {
+  content: attr(aria-label)
+}
