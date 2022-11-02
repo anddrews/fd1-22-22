@@ -3,7 +3,6 @@ $(document).ready(
         $('#slider').slick({
             // autoplay: true,
             autoplaySpeed: 1000,
-            appendArrows: $('.slider-arrows'),
             // dots: true,
             infinite: false
         });
@@ -12,7 +11,9 @@ $(document).ready(
             // autoplay: true,
             autoplaySpeed: 1000,
             // dots: true,
-            infinite: true
+            infinite: true,
+            slidesToShow: 5,
+            centerMode: true
         });
     } 
   );
