@@ -9,3 +9,19 @@ btn.addEventListener('click', () => {
         window.history.pushState({}, '', './second');
     });
 });
+
+
+
+
+$(".slider").slick({
+    slidesToShow: window.outerWidth > 500 ? 5 : 1
+})
+
+
+let c;
+
+if (window.outerWidth > 500) {
+    c = 5;
+} else {
+    c = 1;
+}

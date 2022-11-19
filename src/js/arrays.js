@@ -16,57 +16,50 @@ function double(num, index, arr) {
 }
 
 function doubleMap(num, index, arr) {
-   return num * 2;
+   return undefined;
+   // return num * 2;
 }
 
-arr.forEach(double);
+// arr.forEach(double);
+// const newArr = [];
+// for(let i = 0; i < arr.length; i++) {
+//    if (i === 3) {
+//       continue;
+//    }
+//    newArr[i] = arr[i] * 2;
+// }
 
+function filter(item) {
+   return item === 5;
+}
+
+function sort(a, b) {
+   if (a > b) {
+      return -1;
+   }
+
+   if (a < b) {
+      return 1;
+   }
+
+   return 0;
+}
+
+function find(item) {
+   return item === 5;
+}
+
+console.log(arr);
 const arrMap = arr.map(doubleMap);
-
+console.log(arr.filter(filter));
+// console.log(arr.sort(sort));
+console.log(arr.find(find));
+console.log(arr.slice(1, 3));
+console.log(arr.splice(-2, 10,'d', 'd', 'd'))
 console.log(arr);
-console.log(arrMap);
-console.log(arr);
 
 
-
-
-function add(num1, num2) {
-   return num1 + num2;
-};
-
-// function addTwo(num) {
-//    return add(2, num);
-// }
-
-// function addFive(num) {
-//    return add(5, num);
-// }
-
-
-function addNumber(num) {
-   const param = num;
-
-   return function(num2) {
-      return add(param, num2);
-   }
-}
-
-function sum(num) {
-   return function (r) {
-      if (r) {
-         return sum(r + num);
-      } else {
-         return num;
-      }
-   }
-}
-
-const tmp = sum(1)(2)(3)(4)();
-console.log(tmp);
-
-let addTwo = addNumber(2);
-let addFive = addNumber(5);
-
-console.log(addTwo(4));
-console.log(addFive(6));
+// console.log(arrMap);
+// console.log(arr === arrMap);
+// console.log(arr);
 
