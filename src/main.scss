@@ -3,3 +3,29 @@ body * {
 }
 
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    border: 1px solid tomato;
+  }
+
+  &__item:first-child {
+    flex-grow: 30;
+  }
+
+  &__item:nth-child(2) {
+    flex-grow: 2;
+    white-space: break-word;
+  }
+  
+  &__item:last-child {
+    flex-grow: 1;
+  }
+
+}
