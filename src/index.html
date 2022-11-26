@@ -7,17 +7,29 @@
     <title>First project</title>
     <!-- <script src="./js/main.js" defer></script> -->
     <!-- <script src="./js/hoisting.js" defer></script> -->
-    <script src="./js/arrays.js" defer></script>
+    <!-- <script src="./js/arrays.js" defer></script> -->
     <!-- <script src="./js/ajax.js" defer></script> -->
+    <!-- <script src="./js/dom-manipulation.js" defer></script> -->
+    <script src="./js/sorting.js" defer></script>
   </head>
   <body>
     <header>
+      <section style="background-color: lightgrey;">
+        <button class="button">Button primary</button>
+        <button class="button">OK</button>
+        <button class="button button--secondary">Button secondary</button>
+        <button class="button button--primary button--small">Button small</button>
+        <button class="button button--transparent button--small">Button transparent</button>
+      </section>
+      @@include('./partials/_partial.html')
       Header
       <a href="/second.html">Second</a>
-      <button id="second">Second</button>
+      <button id="second" class="button button--primary" >Second<span >span</span></button>
+      <button id="second2" class="button" >Second</button>
     </header>
     <main>
-      <div class="adv wrapper container">
+      <button id="second" class="button button--primary" >Second main</button>
+      <div tabindex="0" aria-label="area" class="adv wrapper container">
           content
       </div>
     </main>

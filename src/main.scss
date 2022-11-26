@@ -1,5 +1,33 @@
 body * {
-  outline: 1px solid lightgrey;
+  // outline: 1px solid lightgrey;
 }
 
+.button {
+  border: none;
+  background-color: #6f2cff;
+  padding: 10px 35px;
+  min-width: 100px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
 
+  @media  (max-width: 360px) {
+    min-width: 70px;
+    padding: 5px 20px;
+    font-size: 10px;
+  }
+
+  &--secondary {
+    background-color: #fff;
+    color: #6f2cff;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: #000;
+  }
+
+  &--small {
+    padding: 5px 20px;
+  }
+}
