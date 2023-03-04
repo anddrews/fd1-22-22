@@ -31,3 +31,27 @@ body * {
     padding: 5px 20px;
   }
 }
+
+
+.float {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: tomato;
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+
+
+
+

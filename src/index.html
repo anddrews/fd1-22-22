@@ -10,7 +10,8 @@
     <!-- <script src="./js/arrays.js" defer></script> -->
     <!-- <script src="./js/ajax.js" defer></script> -->
     <!-- <script src="./js/dom-manipulation.js" defer></script> -->
-    <script src="./js/sorting.js" defer></script>
+    <!-- <script src="./js/sorting.js" defer></script> -->
+    <script src="./js/strings.js"></script>
   </head>
   <body>
     <header>
@@ -21,7 +22,10 @@
         <button class="button button--primary button--small">Button small</button>
         <button class="button button--transparent button--small">Button transparent</button>
       </section>
-      @@include('./partials/_partial.html')
+      @@include('./partials/_partial.html', {
+        "key": "value",
+
+      })
       Header
       <a href="/second.html">Second</a>
       <button id="second" class="button button--primary" >Second<span >span</span></button>
@@ -32,6 +36,16 @@
       <div tabindex="0" aria-label="area" class="adv wrapper container">
           content
       </div>
+      <div class="clearfix">
+        <div class="float">Float</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus labore aut perferendis non! Officia blanditiis assumenda minus fuga? Incidunt, deserunt. Culpa rem molestias praesentium tempore libero iure minus explicabo!
+        <div ></div>
+      </div>
+      <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus labore aut perferendis non! Officia blanditiis assumenda minus fuga? Incidunt, deserunt. Culpa rem molestias praesentium tempore libero iure minus explicabo!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus labore aut perferendis non! Officia blanditiis assumenda minus fuga? Incidunt, deserunt. Culpa rem molestias praesentium tempore libero iure minus explicabo!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus labore aut perferendis non! Officia blanditiis assumenda minus fuga? Incidunt, deserunt. Culpa rem molestias praesentium tempore libero iure minus explicabo!
+    </div>
     </main>
     <footer>
       Footer
